@@ -15,10 +15,11 @@ web_path = "https://raw.githubusercontent.com/JoanneJons/azure-machine-learning-
 
 def split_data(data):
 
-    y_df = data['diagnosis']
-    data.drop(['diagnosis'], inplace=True, axis=1)
-    data.drop(['Unnamed: 0'], inplace=True, axis=1)
-    x_df = data
+    data_df = data.to_pandas_dataframe().dropna()
+    y_df = data_df['diagnosis']
+    data_df.drop(['diagnosis'], inplace=True, axis=1)
+    # data_df.drop(['Unnamed: 0'], inplace=True, axis=1)
+    x_df = data_df
 
     return x_df, y_df
 
@@ -53,7 +54,7 @@ def main():
     accuracy = model.score(X_test, y_test)
     run.log("Accuracy", np.float(accuracy))
 
-    os.makedirs('output', exists_ok=True)
+    os.makedirs('outputs', exist_ok=True)
     joblib.dump(value=model, filename='outputs/model.pkl')
 
 if __name__ == '__main__':
