@@ -1,0 +1,31 @@
+RunId: HD_54a11a58-f366-4400-9f68-d6b4dd0efe2e
+Web View: https://ml.azure.com/experiments/capstone-project/runs/HD_54a11a58-f366-4400-9f68-d6b4dd0efe2e?wsid=/subscriptions/9b72f9e6-56c5-4c16-991b-19c652994860/resourcegroups/aml-quickstarts-136084/workspaces/quick-starts-ws-136084
+
+Streaming azureml-logs/hyperdrive.txt
+=====================================
+
+"<START>[2021-01-26T07:27:52.727166][API][INFO]Experiment created<END>\n""<START>[2021-01-26T07:27:53.511275][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space<END>\n"<START>[2021-01-26T07:27:54.2508677Z][SCHEDULER][INFO]The execution environment is being prepared. Please be patient as it can take a few minutes.<END>"<START>[2021-01-26T07:27:54.103663][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.<END>\n"
+
+Execution Summary
+=================
+RunId: HD_54a11a58-f366-4400-9f68-d6b4dd0efe2e
+Web View: https://ml.azure.com/experiments/capstone-project/runs/HD_54a11a58-f366-4400-9f68-d6b4dd0efe2e?wsid=/subscriptions/9b72f9e6-56c5-4c16-991b-19c652994860/resourcegroups/aml-quickstarts-136084/workspaces/quick-starts-ws-136084
+
+{'runId': 'HD_54a11a58-f366-4400-9f68-d6b4dd0efe2e',
+ 'target': 'cpu-cluster',
+ 'status': 'Completed',
+ 'startTimeUtc': '2021-01-26T07:27:52.575278Z',
+ 'endTimeUtc': '2021-01-26T07:42:13.297937Z',
+ 'properties': {'primary_metric_config': '{"name": "Accuracy", "goal": "maximize"}',
+  'resume_from': 'null',
+  'runTemplate': 'HyperDrive',
+  'azureml.runsource': 'hyperdrive',
+  'platform': 'AML',
+  'ContentSnapshotId': '3d017f0c-1717-4f01-950f-a5ea1763e8d7',
+  'score': '0.9707602339181286',
+  'best_child_run_id': 'HD_54a11a58-f366-4400-9f68-d6b4dd0efe2e_1',
+  'best_metric_status': 'Succeeded'},
+ 'inputDatasets': [],
+ 'outputDatasets': [],
+ 'logFiles': {'azureml-logs/hyperdrive.txt': 'https://mlstrg136084.blob.core.windows.net/azureml/ExperimentRun/dcid.HD_54a11a58-f366-4400-9f68-d6b4dd0efe2e/azureml-logs/hyperdrive.txt?sv=2019-02-02&sr=b&sig=EH8L7aDDyLCY3WWiMMbGYkwLTAcaF0CiiHmAqSOsb%2B4%3D&st=2021-01-26T07%3A32%3A18Z&se=2021-01-26T15%3A42%3A18Z&sp=r'},
+ 'submittedBy': 'ODL_User 136084'}
