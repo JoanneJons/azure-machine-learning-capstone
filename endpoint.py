@@ -1,8 +1,8 @@
 import requests
 import json
 
-scoring_uri = 'http://19ac972d-b1dd-49dc-af6a-db72674ba244.southcentralus.azurecontainer.io/score'
-key = 'XqAtjrHlZQ6gqknuuRSvN86dRt7QQbzG'
+scoring_uri = 'http://a6d9f881-3dba-4b47-a901-a13f96fef301.southcentralus.azurecontainer.io/score'
+key = 'wLNKqhKi4Fr2f0vsmMfMxnPoCPMgzrQz'
 
 data = {
     "data":[
