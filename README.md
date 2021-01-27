@@ -2,7 +2,7 @@
 
 # Capstone Project - Machine Learning with Microsoft Azure
 
-*This project is part of the Machine Learning Engineer with Microsoft Azure Nanodegree Project*<br>
+*This project is part of the Machine Learning Engineer with Microsoft Azure Nanodegree Program by Udacity & Microsoft.*<br>
 
 ## Project Overview 
 
@@ -104,11 +104,10 @@ After the run is completed, the Experiment tab shows the status of the run as *C
 The run details page shows more information about the run, like the duration, compute target, run ID, run summary and best model summary. 
 ![rundetails](./images/automl-run-details.png)
 
-In this experiment the following model models were trained by AutoML during the run. The advantage of using AutoML is that a lot of algorithms are tried out in a very short amount of time and an optimal one can be easily chosen.  
+In this experiment the following models were trained by AutoML during the run. The advantage of using AutoML is that a lot of algorithms are tried out in a very short amount of time and an optimal one can be easily chosen.  
 ![algorithms](./images/automl-diff-models.png)
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 In this experiment, AutoML generated a model which uses the **Standard Scaler Wrapper and Logistic Regression** algorithm and has shown an accuracy of **0.97660**.
 ![bestmodel](./images/automl-best-model-summary.png)
@@ -192,7 +191,7 @@ The best model from the AutoML run is registered into the workspace.
 
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+
 
 ### Random Forest Model
 The random forest is an ensemble algorithm which can be used for both classification and regression. The algorithm creates multiple decision trees on randomly selected data samples, gets prediction from each tree and selects the best solution by means of voting. This algorithm was chosen because it is considered as highly accuracte, robust and powerful. 
@@ -256,10 +255,6 @@ During the run, multiple child runs were run with different combinations of hype
 ![hyperdrive](./images/hyperdrive-child-runs-1.png)
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
 The best run generated the following values for hyperparameters and gave an accuracy of **0.97660**.
 
 1. `bootstrap = True`
@@ -282,7 +277,6 @@ The best model from the HyperDrive run is registered into the workspace.
 
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
 **Accuracy of AutoML Model = 0.97660 <br>
 Accuracy of HyperDrive tuned Random Forest Model = 0.97660**<br>
@@ -335,10 +329,8 @@ Since application insights were enabled after deployment, it can be viewed using
 After the experiment is done, the service and the compute cluster is deleted.
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+
+[Link to Screen Recording]()
 
 
 ## Further Improvements
