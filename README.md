@@ -73,24 +73,28 @@ Once the dataset is analysed and prepared, it is uploaded to this GitHub reposit
 
 ### Automated ML Configuration
 
-For this project, AutoML was configured using an instance of the  `AutoMLConfig` object. The following parameters were set:<br>
+For this project, AutoML was configured using an instance of the  `AutoMLConfig` object.
+The settings for the AutoML run is defined in a dictionary `automl_settings` and contains the following information:
 1. `experiment_timeout_minutes = 30`<br>
 *Maximum amount of time in minutes that all iterations combined can take before the experiment terminates.*<br>
 For this project, this has been set as 30 because of the time restrictions of Udacity labs.<br><br>
-2. `task = 'classification'`<br>
+2. `primary_metric = 'accuracy'`<br>
+*The metric that AutoML will optimize for model selection.*<br><br>
+
+An instance of `AutoMLConfig` is then created and the following parameters were set:<br>
+1. `task = 'classification'`<br>
 *The type of task to run depending on the automated ML problem to solve.*<br>
 This project handles a binary classification task.<br><br>
-3. `compute_target=cpu_cluster`<br>
+2. `compute_target=cpu_cluster`<br>
 *The Azure Machine Learning compute target to run the AutoML experiment on.*<br>For this experiment, a compute cluster called `cpu_cluster` is created before configuring AutoML. This computer cluser is *STANDARD_D2_V2* with a maximum of 4 nodes.
 ![Compute](./images/compute-automl.png)<br><br>
-4. `training_data = train_data`<br>
+3. `training_data = train_data`<br>
 *The training data to be used within the experiment.*<br>Here `train_data` is a TabularDataset loaded from a CSV file.<br><br>
-5. `primary_metric = 'accuracy'`<br>
-*The metric that AutoML will optimize for model selection.*<br><br>
-6. `label_column_name = 'diagnosis'`<br>
+4. `label_column_name = 'diagnosis'`<br>
 *The name of the label column.*<br>Here the target column is 'diagnosis' which specifies whether the instance is malignant (1) or benign (0).<br><br>
-7. `n_cross_validations = 5`<br>
+5. `n_cross_validations = 5`<br>
 *The number of cross validations to perform when user validation data is not specified.*<br><br>
+The settings dictionary `automl_settings` is passed to this instance as well.
 
 ### Automated ML Run
 
