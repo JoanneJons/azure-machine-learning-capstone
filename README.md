@@ -330,7 +330,7 @@ After the experiment is done, the service and the compute cluster is deleted.
 
 ## Screen Recording
 
-[Link to Screen Recording]()
+[Link to Screen Recording](https://youtu.be/6pNr21Y1cH0)
 
 
 ## Further Improvements
