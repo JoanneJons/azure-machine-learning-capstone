@@ -330,11 +330,18 @@ The result was obtained as follows.
 Since application insights were enabled after deployment, it can be viewed using the Application Insights URL.
 ![data](./images/app-insights.png)
 
+## Resources Clean Up
+
+After the experiment is done, the service and the compute cluster is deleted.
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+## Further Improvements
+1. The AutoML run gave insights on how important each feature is. So in future experiments, the dataset can be manipulated and prepared better. 
+2. HyperDrive requires sampling method and early termination policies. Random sampling & bandit policy is used in this experiment, but in future experiments, they can be changed to other options and the performance can be compared. 
+3. A user interface can be created for interacting with the endpoint. 
